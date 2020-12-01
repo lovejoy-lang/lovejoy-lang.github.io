@@ -8,6 +8,8 @@
     (link :rel stylesheet :href "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css")
     ; Basic CSS
     (link :rel stylesheet :href "https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css")
+    ; Favicon
+    (link :rel "shortcut icon" :href "https://lovejoy-lang.github.io/ljc/_static/lovejoy_icon.png")
     ; User styles
     (style (%include "styles.sex")))
   (body (main :class wrapper
