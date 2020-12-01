@@ -1,0 +1,42 @@
+
+(\:root
+  :--mono ('GT-Pressura-Mono' , monospace)
+  :--disp ('Alp-Sta' , serif)
+  :--body ( 'GT-Corporate-Web'
+         , 'GT-Corporate-Web-LCGV'
+         , sans-serif))
+
+(body
+  :color #111
+  :font-family (var --body))
+
+(h1 , h2 , h3 , h4 , h5 , h6
+  :font-family (var --disp))
+
+(.para
+  :margin-left 0.2em
+  :opacity 0.1
+  )
+
+(header
+  :background (url "https://lovejoy-lang.github.io/ljc/_images/lovejoy.png")
+  :background-position center
+  :color #fff
+  :background-size cover
+  :text-align center
+  :margin-bottom 5rem)
+
+(pre
+  :border (1pt solid #ddd)
+  :border-radius 4pt
+  :box-shadow (0 4px 25px #00000017))
+
+(header .container
+  :border-right (2pt solid #0000001a)
+  :backdrop-filter ((saturate 120%) (blur 15px))
+  :padding-top 11rem
+  :padding-bottom 10rem)
+
+(.wrapper .container
+  :border-left (2pt solid #0000001a)
+  :max-width 80rem)

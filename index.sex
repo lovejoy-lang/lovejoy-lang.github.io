@@ -1,0 +1,28 @@
+(!DOCTYPE html)
+(html
+  (head
+    (title Lovejoy Programming Langauge)
+    ; Fonts
+    (link :rel stylesheet :href "https://lovejoy-lang.github.io/ljc/_static/fonts.css")
+    ; Normalise CSS
+    (link :rel stylesheet :href "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css")
+    ; Basic CSS
+    (link :rel stylesheet :href "https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css")
+    ; User styles
+    (style (%include "styles.sex")))
+  (body (main :class wrapper
+    (header :class header (section :class container
+      (h1 Lovejoy Programming Language)))
+    (section :class container
+        (h2 Lovejoy Compiler (span :class para &para))
+        (p Compiler documentation can be found at
+           (a :href "https://lovejoy-lang.github.io/ljc"
+              lovejoy-lang.github.io/ljc)))
+    (section :class container
+        (h2 Looks something like this, maybe? (span :class para &para))
+        (pre (code """import io::{self, puts}
+
+main(argv[] : String) = {
+    puts("Hello, World.")
+    exit(0)
+}"""))))))
