@@ -2,16 +2,7 @@
 (html
   (head
     (title Lovejoy Programming Langauge)
-    ; Fonts
-    (link :rel stylesheet :href "https://lovejoy-lang.github.io/ljc/_static/fonts.css")
-    ; Normalise CSS
-    (link :rel stylesheet :href "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css")
-    ; Basic CSS
-    (link :rel stylesheet :href "https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css")
-    ; Favicon
-    (link :rel "shortcut icon" :href "https://lovejoy-lang.github.io/ljc/_static/lovejoy_icon.png")
-    ; User styles
-    (style (%include "styles.sex")))
+    (%include "head.sex"))
   (body (main :class wrapper
     (header :class header (section :class container
       (h1 Lovejoy Programming Language)))
@@ -22,9 +13,8 @@
               lovejoy-lang.github.io/ljc)))
     (section :class container
         (h2 Looks something like this, maybe? (span :class para &para))
-        (pre (code """import io::{self, puts}
-
-main(argv[] : String) = {
-    puts("Hello, World.")
-    exit(0)
-}"""))))))
+        (pre (code :class "cpp"
+            "import io::{self, puts}\n\n"
+            "main(argv[] : String) : u0"
+            "    = exit(0) with puts(\"Hello, World.\")")))
+    (%include "footer.sex"))))

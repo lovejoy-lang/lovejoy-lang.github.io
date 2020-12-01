@@ -27,9 +27,15 @@
   :margin-bottom 5rem)
 
 (pre
+  :background #f4f5f6
   :border (1pt solid #ddd)
   :border-radius 4pt
   :box-shadow (0 4px 25px #00000017))
+
+(pre > code
+  :background #f4f5f6)
+(.hljs
+  :background #f4f5f6)
 
 (header .container
   :border-right (2pt solid #0000001a)
