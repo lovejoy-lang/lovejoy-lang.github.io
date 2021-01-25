@@ -13,8 +13,8 @@
               lovejoy-lang.github.io/ljc)))
     (section :class container
         (h2 Looks something like this, maybe? (span :class para &para))
-        (pre (code :class "cpp"
+        (pre (code :class "go"
             "import io::{self, puts}\n\n"
-            "main(argv[] : String) : u0"
+            "main(argv[]: string): !"
             "    = exit(0) with puts(\"Hello, World.\")")))
     (%include "footer.sex"))))
